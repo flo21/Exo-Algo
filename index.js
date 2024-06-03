@@ -92,6 +92,17 @@ console.log(sumWithInitial);
 // console.log(monTableauInverse) // ["o", "l", "l", "e", "H"]
 //Maintenant que la string est inversée il faut la remettre en string avec la méthode join().
 
+const stringInverse = (str) => {
+  const mastring = str;
+  const monTableau = mastring.split("");
+  const monTableauInverse = monTableau.reverse();
+  const monTableauInverseEnString = monTableauInverse.join();
+  console.log(monTableauInverseEnString);
+}
+
+stringInverse("Hello");
+
+
 
 //----------------------------------------------------------------------------------------------//
 
@@ -101,6 +112,16 @@ console.log(sumWithInitial);
 // Pour cette exercice on va utiliser la méthode Math.max() qui permet de retourner le plus grand nombre d'un tableau :
 // const monTableau = [1, 2, 3]
 // console.log(Math.max(...monTableau)) // 3
+
+const lePlusGrand = (array) => {
+  const tableau6 = array;
+  const maxTableau = Math.max(...tableau6);
+  console.log(maxTableau);
+}
+
+lePlusGrand([1, 3, 9]);
+
+
 
 
 
@@ -112,6 +133,14 @@ console.log(sumWithInitial);
 // Pour cette exercice on va utiliser la méthode Math.min() qui permet de retourner le plus petit nombre d'un tableau :
 // const monTableau = [1, 2, 3]
 // console.log(Math.min(...monTableau)) // 1
+
+const lePlusPetit = (array) => {
+  const tableau7 = array;
+  const maxTableau7 = Math.min(...tableau7);
+  console.log(maxTableau7);
+}
+
+lePlusPetit([1, 3, 9]);
 
 
 
@@ -129,7 +158,17 @@ console.log(sumWithInitial);
 //   return element !== "e" && element !== "o"
 // })
 
+const exo8 = (str) => {
+  const maString8 = str;
+  const monTableau8 = maString8.split("");
+  const monTableauFiltre8 = monTableau8.filter((element) => {
+  return element !== "e" && element !== "o" && element !== "a" && element !== "i" && element !== "u" && element !== "y";
+  })
 
+  console.log(monTableauFiltre8);
+}
+
+exo8("avocat");
 
 //----------------------------------------------------------------------------------------------//
 
@@ -140,6 +179,13 @@ console.log(sumWithInitial);
 // Pour cette exercice on va utiliser la méthode sort() qui permet de trier un tableau :
 // const monTableau = [1, 3, 2]
 // console.log(monTableau.sort()) // [1, 2, 3]
+
+const monTableauCroissant = (array) => {
+  const monTableau9 = array;
+  console.log(monTableau9.sort());
+}
+monTableauCroissant([18, 27, 12]);
+
 
 
 
