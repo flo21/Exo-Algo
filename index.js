@@ -204,6 +204,19 @@ monTableauCroissant([18, 27, 12]);
 // }
 // console.log(monTableau) // ["Hello", "elloH", "lloHe", "loHel", "oHell"]
 
+const rotation = (str) => {
+  const maString10 = str;
+  const monTableau10 = [];
+
+  for (let i = 0; i < maString10.length; i++) {
+    const maStringRotate = maString10.substring(i) + maString10.substring(0, i);
+    monTableau10.push(maStringRotate);
+  }
+
+  console.log(monTableau10);
+}
+
+rotation("Hello");
 
 
 //----------------------------------------------------------------------------------------------//
