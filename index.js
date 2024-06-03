@@ -11,6 +11,16 @@
 // console.log(nomDeMaFonction(On remplace le paramètre par ce qu'on désire)) //
 
 
+
+const multiple = (a, b) => {
+    return a * b;
+}
+
+const x = multiple(2,3);
+
+console.log(x);
+
+
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 2
 
@@ -20,8 +30,12 @@
 // const monTableau = [1, 2, 3]
 // console.log(monTableau[0]) // 1
 
+const tab = [1, 2, 3];
 
-
+const firstTab = (myArray) => {
+   return tab[0];
+}
+console.log(firstTab(tab));
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
 
@@ -32,6 +46,14 @@
 // monTableau.pop()
 // console.log(monTableau) // [1, 2]
 
+const tabbaseexo3 = [1, 2, 3];
+
+const tabexo3 = (myArray) => {
+    return tabbaseexo3.pop();
+}
+
+console.log(tabexo3(tabbaseexo3));
+console.log(tabbaseexo3);
 
 
 //----------------------------------------------------------------------------------------------//
@@ -44,6 +66,16 @@
 // for (let i = 0; i < monTableau.length; i++) {
 //   console.log(monTableau[i]) // 1, 2, 3
 // }
+
+const tabbaseexo4 = [1, 2, 3];
+const initialValue = 0;
+
+const sumWithInitial = tabbaseexo4.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);
+
+console.log(sumWithInitial);
 
 
 
