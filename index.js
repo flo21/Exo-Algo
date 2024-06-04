@@ -231,6 +231,20 @@ rotation("Hello");
 //   return element + 1
 // })
 
+const monTableau11 = [1, 2, 3];
+
+const ajoutUn = (array) => {
+  
+  const monTableauAddition = array.map((element) => {
+    return element + 1;
+  })
+  console.log(monTableauAddition);
+}
+
+ajoutUn(monTableau11);
+
+
+
 
 //----------------------------------------------------------------------------------------------//
 
@@ -243,6 +257,19 @@ rotation("Hello");
 // const monTableauLongueur = monTableau.map((element) => {
 //   return element.length
 // })
+
+const monTableau12 = ["Hello", "World"];
+
+const stringLength = (array) => {
+  const monTableauLongueur = array.map((element) => {
+    return element.length;
+  })
+  console.log(monTableauLongueur);
+}
+
+stringLength(monTableau12);
+
+
 
 
 //----------------------------------------------------------------------------------------------//
@@ -259,6 +286,19 @@ rotation("Hello");
 // })
 
 
+const monTableau13 = ["Hello", "World"];
+
+
+const firstLettter = (array) => {
+  const monTableauPremiereLettre = array.map((element) => {
+    return element.charAt(0);
+  })
+  console.log(monTableauPremiereLettre);
+}
+
+firstLettter(monTableau13);
+
+
 
 //----------------------------------------------------------------------------------------------//
 
@@ -269,6 +309,16 @@ rotation("Hello");
 // Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
 
 
+const monTableau14 = ["Hello", "World"];
+const lastLettter = (array) => {
+  const monTableauDerniereLettre = array.map((element) => {
+    return element.charAt(element.length - 1);
+  })
+  console.log(monTableauDerniereLettre);
+}
+
+lastLettter(monTableau14);
+
 
 //----------------------------------------------------------------------------------------------//
 
@@ -277,6 +327,19 @@ rotation("Hello");
 // Crée une fonction qui prend en paramètre un tableau de string et qui doit renvoyer tout les string qui ont une longueur de 5 caractères ou plus.
 // Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
+
+const monTableau15 = ["Hello", "World","Test", "Salut", "Yo"];
+
+const fiveCaracterAndMore = (array) => {
+  const monTableauFiltre15 = array.filter((element) => {
+    return element.length >= 5 ;
+    })
+  
+    console.log(monTableauFiltre15);
+}
+
+fiveCaracterAndMore(monTableau15);
+  
 
 
 
@@ -292,6 +355,19 @@ rotation("Hello");
 //   return accumulateur + element
 // }, 0)
 
+const monTableau16 = [1, 2, 3];
+
+const sommeNombreTableau = (array) => {
+  const somme = array.reduce((accumulateur, element) => {
+    return accumulateur + element
+  }, 0)
+
+  console.log(somme);
+}
+
+sommeNombreTableau(monTableau16);
+
+
 
 
 //----------------------------------------------------------------------------------------------//
@@ -305,6 +381,7 @@ rotation("Hello");
 // const monTableau2 = ["Test", "Salut"]
 // const monTableauConcat = monTableau1.concat(monTableau2)
 // console.log(monTableauConcat) // ["Hello", "World", "Test", "Salut"]
+
 
 
 
